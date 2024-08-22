@@ -4,6 +4,8 @@ This Jupyter notebook contains an analysis of customer reviews for American Airl
 
 ## Contents
 
+---
+
 1. Data Collection
    - Web scraping from Skytrax using Python and BeautifulSoup
 
@@ -25,17 +27,51 @@ This Jupyter notebook contains an analysis of customer reviews for American Airl
    - TF-IDF analysis
    - LDA topic modeling
 
-## Key Insights
+---
 
-- The majority of reviews are negative, with issues primarily related to delays, customer service, and baggage handling.
-- Sentiment analysis reveals that negative reviews tend to be more subjective than positive ones.
-- Topic modeling identified distinct themes in the reviews, including customer service issues, baggage problems, and flight delays.
+## Key Findings
 
-## Requirements
+1. Review Sentiment
+   - Majority of reviews are negative
+   - Primary issues: delays, customer service, baggage handling
 
-- Python 3.x
-- Libraries: BeautifulSoup, WordCloud, TextBlob, gensim, scikit-learn, pandas, matplotlib, seaborn, plotly, numpy, pyLDAvis
+2. Sentiment Analysis
+   - Negative reviews tend to be more subjective than positive ones
 
-## Usage
+3. Topic Modeling Results
+   - Main themes: customer service issues, baggage problems, flight delays
 
-Run the cells in order to reproduce the analysis. Make sure to install all required libraries before running the notebook.
+---
+
+## Data Visualization Highlights
+
+1. Ratio of positive vs negative reviews (pie chart)
+2. Violin plots: ratings for different service aspects
+3. Word clouds: positive vs negative reviews
+4. Overall ratings by country (heat map)
+
+---
+
+## Actionable Insights
+
+1. Focus on improving:
+   - On-time performance
+   - Customer service training
+   - Baggage handling efficiency
+
+2. Develop targeted strategies for:
+   - Countries with lower overall ratings
+   - Specific service aspects with poor ratings
+
+3. Implement feedback loop:
+   - Regular sentiment analysis of customer reviews
+   - Continuous improvement based on identified themes
+
+---
+
+## Next Steps
+
+1. Deeper dive into specific problem areas
+2. Develop action plans for each key issue
+3. Set up ongoing monitoring and reporting system
+4. Conduct follow-up analysis in 6 months to measure improvement
