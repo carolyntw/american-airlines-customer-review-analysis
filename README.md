@@ -48,7 +48,7 @@ This Jupyter notebook contains an analysis of customer reviews for American Airl
 1. Ratio of positive vs negative reviews (pie chart)
 2. Violin plots: ratings for different service aspects
 3. Word clouds: positive vs negative reviews
-4. Overall ratings by country (heat map)
+4. LDA Topic Modeling Visualization
 
 ---
 
