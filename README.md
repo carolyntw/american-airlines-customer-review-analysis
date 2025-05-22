@@ -1,77 +1,72 @@
 # American Airlines Customer Review Analysis
 
-This Jupyter notebook contains an analysis of customer reviews for American Airlines, using web scraping, data cleaning, exploratory data analysis (EDA), and natural language processing (NLP) techniques.
-
-## Contents
+**A text analytics project focused on extracting insights from airline customer feedback.**
 
 ---
 
-1. Data Collection
-   - Web scraping from Skytrax using Python and BeautifulSoup
+## Summary
 
-2. Data Cleaning
-   - Handling missing values
-   - Removing non-textual elements
-   - Text normalization
-   - Converting date columns
-   - Converting 'Recommended' column to binary values
-
-3. Exploratory Data Analysis (EDA)
-   - Ratio of positive and negative reviews
-   - Violin plots of ratings for different service aspects
-   - Analysis of overall ratings by country
-
-4. Text Analytics
-   - Word clouds for positive and negative reviews
-   - Sentiment analysis
-   - TF-IDF analysis
-   - LDA topic modeling
+This project explores customer reviews for American Airlines to understand key themes, sentiment trends, and potential areas for service improvement.
 
 ---
 
-## Key Findings
+## Objectives
 
-1. Review Sentiment
-   - Majority of reviews are negative
-   - Primary issues: delays, customer service, baggage handling
-
-2. Sentiment Analysis
-   - Negative reviews tend to be more subjective than positive ones
-
-3. Topic Modeling Results
-   - Main themes: customer service issues, baggage problems, flight delays
+- Analyze review content to uncover common complaints or praise.
+- Quantify sentiment using NLP techniques.
+- Provide data-driven suggestions for customer experience improvements.
 
 ---
 
-## Data Visualization Highlights
+## Files
 
-1. Ratio of positive vs negative reviews (pie chart)
-2. Violin plots: ratings for different service aspects
-3. Word clouds: positive vs negative reviews
-4. LDA Topic Modeling Visualization
+| File | Description |
+|------|-------------|
+| [`script.ipynb`](./script.ipynb) | Main notebook with data cleaning, EDA, sentiment analysis |
+| `README.md` | Project overview and instructions |
 
 ---
 
-## Actionable Insights
+## Methods & Tools
 
-1. Focus on improving:
-   - On-time performance
-   - Customer service training
-   - Baggage handling efficiency
+- **Text Cleaning**: stopword removal, lemmatization
+- **Visualization**: Word clouds, sentiment distributions
+- **NLP**: VADER Sentiment Scoring (NLTK)
+- **Python Libraries**: Pandas, Matplotlib, NLTK, WordCloud
 
-2. Develop targeted strategies for:
-   - Countries with lower overall ratings
-   - Specific service aspects with poor ratings
+---
 
-3. Implement feedback loop:
-   - Regular sentiment analysis of customer reviews
-   - Continuous improvement based on identified themes
+## Key Insights (Examples)
+
+- Reviews mentioning “delay”, “cancel”, and “rude” were heavily negative.
+- Positive reviews often highlighted “crew”, “smooth flight”, and “upgrade”.
+- Sentiment polarity skewed more negative than expected (based on distribution).
+
+---
+
+## Sample Visuals
+
+### Sentiment Distribution
+![Sentiment Analysis](./image/sentiment_analysis.png)  
+*Customer review sentiment scores, using TextBlob polarity and subjectivity.*
+
+### Topic Modeling: Top Complaints
+![Topic Modeling - Customer Service Focus](./image/lda_1.png)  
+*Topic 3 (26.9% of tokens) centers around complaints about customer service, flight delays, and hotel accommodations.*
+
+---
+
+## Business Impact
+
+These insights can help:
+- **Customer service** teams prioritize common complaints
+- **Marketing** target improvement narratives
+- **Product teams** address specific route or timing issues
 
 ---
 
 ## Next Steps
 
-1. Deeper dive into specific problem areas
-2. Develop action plans for each key issue
-3. Set up ongoing monitoring and reporting system
-4. Conduct follow-up analysis in 6 months to measure improvement
+- Train a topic model (LDA) to cluster reviews by theme
+- Build a Streamlit dashboard to explore sentiment by route
+- Compare with competitor airline reviews (Delta, United)
